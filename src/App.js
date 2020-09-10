@@ -1,11 +1,14 @@
 import React, { useState, useEffect }  from "react";
 import "./App.css";
 import Axios from "axios";
-import styled, { keyframes } from 'styled-components'
+
 
 import Header from './Header'
+import Structure from './Structure'
 
 const today = new Date()
+
+
 function App() {
   
   const [image, setImage] = useState('')
