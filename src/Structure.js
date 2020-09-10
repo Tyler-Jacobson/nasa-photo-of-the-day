@@ -1,14 +1,13 @@
-import React from 'react'
+import React from "react";
 
-const Body = props => {
+const Body = (props) => {
+  const { url } = props;
 
-    const { url } = props
+  return (
+    <div className="image">
+      <img src={url} alt={"space"} />
+    </div>
+  );
+};
 
-    const Image = ({ url }) => (
-        <div className='image'>
-          <img src={url} alt={'space'}/>
-        </div>
-      )
-}
-
-export default Body
+export default Body;

@@ -23,16 +23,19 @@ function App() {
     })
   }, [])
 
-  const Image = ({ url }) => (
-    <div className='image'>
-      <img src={url} alt={'space'}/>
-    </div>
-  )
+  function flipImage() {
+    // This function serves the purpose of flipping to the next image to the right or left
+    // The state for this function will live at the top of the react tree, but the Structure.js file needs to be able to change the current image by calling this function
+    // As such, this function needs to be passed down through props
+    
+
+  }
+
   console.log(today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate())
   return (
     <div className="App">
       <Header />
-      <Image url={image}/>
+      <Structure url={image}/>
     </div>
   );
 }
